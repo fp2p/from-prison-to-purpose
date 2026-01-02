@@ -2,94 +2,192 @@
 <html lang="en">
 <head>
   <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Programs | From Prison to Purpose</title>
-  <link rel="stylesheet" href="styles.css" />
-  <link rel="icon" type="image/png" href="assets/img/logo-mark.png">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@600;700;800;900&family=Source+Serif+4:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/styles.css" />
 </head>
+
 <body>
 
-<header class="site-header">
-  <div class="container site-header-inner">
-    <a class="brand" href="index.html" aria-label="From Prison to Purpose home">
-      <img class="brand-mark" src="assets/img/logo-mark.png" alt="From Prison to Purpose logo mark" width="56" height="56" loading="eager" decoding="async" />
+<header class="header">
+  <div class="container header-inner">
+    <a class="brand" href="index.html" aria-label="From Prison to Purpose Home">
+      <img class="brand-logo" src="assets/img/logo-mark.png" alt="From Prison to Purpose logo" />
       <span>
-        <span class="brand-name">From Prison to Purpose</span>
-        <span class="brand-tag">Foundation</span>
+        <div class="brand-name">From Prison to Purpose</div>
+        <div class="brand-tag">Nonprofit Foundation</div>
       </span>
     </a>
 
-    <nav class="site-nav" aria-label="Primary">
+    <nav class="nav" aria-label="Primary">
       <a href="index.html">Home</a>
       <a href="about.html">About Us</a>
-      <a href="programs.html" aria-current="page">Programs</a>
+      <a class="active" href="programs.html">Programs</a>
       <a href="get-involved.html">Get Involved</a>
-      <a href="donate.html" class="nav-cta">Donate</a>
       <a href="contact.html">Contact</a>
+      <a class="btn btn-primary" href="donate.html">Donate</a>
     </nav>
   </div>
 </header>
 
-<main class="page">
-  <section class="page-header">
-    <div class="container">
-      <h1>Programs</h1>
-      <p>Clear steps that help people move from survival mode to stability and purpose.</p>
-    </div>
-  </section>
-
-  <section class="content">
-    <div class="container">
-      <div class="grid-3">
-        <div class="card">
-          <h3>Reentry Planning</h3>
-          <p>Support for housing, transportation, documentation, and next steps.</p>
-        </div>
-        <div class="card">
-          <h3>Mentor Match</h3>
-          <p>Connection with mentors who provide guidance and accountability.</p>
-        </div>
-        <div class="card">
-          <h3>Job Readiness</h3>
-          <p>Resume support, interview coaching, and employer partnerships.</p>
-        </div>
-      </div>
-
-      <div style="height:14px"></div>
-
-      <div class="card">
-        <h3>Interested in joining a program?</h3>
-        <p>Reach out and we will point you to the best next step.</p>
-        <div style="height:12px"></div>
-        <a class="button primary" href="contact.html">Contact Us</a>
-      </div>
-    </div>
-  </section>
-</main>
-
-<footer class="site-footer">
-  <div class="container footer-inner">
-    <div class="footer-brand">
-      <img class="footer-mark" src="assets/img/logo-mark.png" alt="" width="40" height="40" loading="lazy" decoding="async" />
-      <div>
-        <div style="font-weight:800;">From Prison to Purpose</div>
-        <div class="small">© <span id="year"></span> All rights reserved.</div>
-      </div>
-    </div>
-
-    <div class="footer-links">
-      <a href="about.html">About</a>
-      <a href="programs.html">Programs</a>
-      <a href="get-involved.html">Get Involved</a>
-      <a href="donate.html">Donate</a>
-      <a href="contact.html">Contact</a>
+<section class="hero hero-small">
+  <div class="hero-bg" style="background-image:url('assets/img/hero-programs.jpg');"></div>
+  <div class="container hero-inner">
+    <span class="eyebrow">What we offer</span>
+    <h1>Programs designed for real reentry.</h1>
+    <p>
+      Our services focus on stability, skills, and supportive relationships during the most critical transition period.
+    </p>
+    <div class="hero-actions">
+      <a class="btn btn-primary" href="contact.html">Ask about enrollment</a>
+      <a class="btn btn-outline" href="get-involved.html">Get Involved</a>
     </div>
   </div>
-</footer>
+</section>
 
-<script>
-  document.getElementById("year").textContent = new Date().getFullYear();
-</script>
+<section class="section alt">
+  <div class="container">
+    <div class="section-header">
+      <span class="eyebrow" style="color: var(--evergreen);">Core programs</span>
+      <h2>Support that meets people where they are.</h2>
+      <p>
+        Each program is designed to address common barriers faced during reentry while honoring individual goals and circumstances.
+      </p>
+    </div>
+
+    <div class="grid grid-3">
+      <div class="card">
+        <h3>Reentry Navigation</h3>
+        <p class="muted">
+          Practical guidance for housing, identification, transportation, and employment readiness.
+        </p>
+      </div>
+
+      <div class="card">
+        <h3>Mentorship Program</h3>
+        <p class="muted">
+          One-to-one mentorship relationships that provide accountability, encouragement, and connection.
+        </p>
+      </div>
+
+      <div class="card">
+        <h3>Life Skills & Planning</h3>
+        <p class="muted">
+          Goal setting, budgeting basics, communication skills, and planning for long-term stability.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="split">
+      <div>
+        <span class="eyebrow" style="color: var(--evergreen);">How it works</span>
+        <h2>Clear steps. Consistent support.</h2>
+        <p class="muted">
+          While every participant’s journey is unique, our programs follow a clear and supportive structure.
+        </p>
+
+        <ol class="steps">
+          <li>
+            <strong>Initial connection</strong><br />
+            Referral, application, or direct outreach to begin the process.
+          </li>
+          <li>
+            <strong>Assessment & planning</strong><br />
+            Identify immediate needs, goals, and available resources.
+          </li>
+          <li>
+            <strong>Program participation</strong><br />
+            Engagement in mentorship, skill-building, and coordinated support.
+          </li>
+          <li>
+            <strong>Ongoing follow-up</strong><br />
+            Continued connection and accountability as stability increases.
+          </li>
+        </ol>
+
+        <div style="margin-top:16px; display:flex; gap:12px; flex-wrap:wrap;">
+          <a class="btn btn-primary" href="contact.html">Get started</a>
+          <a class="btn btn-ghost" href="about.html">Why we do this</a>
+        </div>
+      </div>
+
+      <div>
+        <div class="card highlight">
+          <span class="eyebrow" style="color: var(--gold);">Who we serve</span>
+          <h2 style="margin-top:8px;">Individuals returning home.</h2>
+          <p class="muted">
+            We serve people transitioning from incarceration who are seeking stability, support, and direction.
+            Participation may be based on availability, referrals, and program capacity.
+          </p>
+
+          <ul class="checklist">
+            <li>Recently released individuals</li>
+            <li>People preparing for reentry</li>
+            <li>Individuals seeking mentorship and guidance</li>
+            <li>Families navigating reentry alongside loved ones</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section alt">
+  <div class="container">
+    <div class="section-header">
+      <span class="eyebrow" style="color: var(--evergreen);">Get connected</span>
+      <h2>Let’s take the next step together.</h2>
+      <p>
+        If you’re interested in participating or referring someone to our programs, reach out to start the conversation.
+      </p>
+    </div>
+
+    <div style="display:flex; gap:12px; flex-wrap:wrap;">
+      <a class="btn btn-primary" href="contact.html">Contact Us</a>
+      <a class="btn btn-ghost" href="get-involved.html">Volunteer or mentor</a>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container footer-grid">
+    <div>
+      <h3>From Prison to Purpose</h3>
+      <p>Helping people rebuild life with dignity, support, and purpose.</p>
+      <small>© <span id="year"></span> From Prison to Purpose. All rights reserved.</small>
+    </div>
+
+    <div>
+      <h3>Explore</h3>
+      <p><a href="about.html">About Us</a></p>
+      <p><a href="programs.html">Programs</a></p>
+      <p><a href="get-involved.html">Get Involved</a></p>
+      <p><a href="donate.html">Donate</a></p>
+      <p><a href="contact.html">Contact</a></p>
+    </div>
+
+    <div>
+      <h3>Contact</h3>
+      <p>Email: <a href="mailto:info@fromprisontopurpose.org">info@fromprisontopurpose.org</a></p>
+      <p>Phone: <a href="tel:+1">Add phone number</a></p>
+      <p><small>Replace placeholders as details are confirmed.</small></p>
+    </div>
+  </div>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</footer>
 
 </body>
 </html>

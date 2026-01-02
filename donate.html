@@ -2,93 +2,182 @@
 <html lang="en">
 <head>
   <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Donate | From Prison to Purpose</title>
-  <link rel="stylesheet" href="styles.css" />
-  <link rel="icon" type="image/png" href="assets/img/logo-mark.png">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@600;700;800;900&family=Source+Serif+4:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/styles.css" />
 </head>
+
 <body>
 
-<header class="site-header">
-  <div class="container site-header-inner">
-    <a class="brand" href="index.html" aria-label="From Prison to Purpose home">
-      <img class="brand-mark" src="assets/img/logo-mark.png" alt="From Prison to Purpose logo mark" width="56" height="56" loading="eager" decoding="async" />
+<header class="header">
+  <div class="container header-inner">
+    <a class="brand" href="index.html" aria-label="From Prison to Purpose Home">
+      <img class="brand-logo" src="assets/img/logo-mark.png" alt="From Prison to Purpose logo" />
       <span>
-        <span class="brand-name">From Prison to Purpose</span>
-        <span class="brand-tag">Foundation</span>
+        <div class="brand-name">From Prison to Purpose</div>
+        <div class="brand-tag">Nonprofit Foundation</div>
       </span>
     </a>
 
-    <nav class="site-nav" aria-label="Primary">
+    <nav class="nav" aria-label="Primary">
       <a href="index.html">Home</a>
       <a href="about.html">About Us</a>
       <a href="programs.html">Programs</a>
       <a href="get-involved.html">Get Involved</a>
-      <a href="donate.html" class="nav-cta" aria-current="page">Donate</a>
       <a href="contact.html">Contact</a>
+      <a class="btn btn-primary active" href="donate.html">Donate</a>
     </nav>
   </div>
 </header>
 
-<main class="page">
-  <section class="page-header">
-    <div class="container">
-      <h1>Donate</h1>
-      <p>Your support helps fund mentorship, reentry resources, and real opportunities.</p>
+<section class="hero hero-small">
+  <div class="hero-bg" style="background-image:url('assets/img/hero-donate.jpg');"></div>
+  <div class="container hero-inner">
+    <span class="eyebrow">Support the mission</span>
+    <h1>Your generosity builds real pathways forward.</h1>
+    <p>
+      Donations help provide practical support, mentorship resources, and program stability for people rebuilding life after incarceration.
+    </p>
+    <div class="hero-actions">
+      <!-- Replace # with your PayPal link when ready -->
+      <a class="btn btn-primary" href="#" target="_blank" rel="noopener">Donate with PayPal</a>
+      <a class="btn btn-outline" href="get-involved.html">Get Involved</a>
     </div>
-  </section>
+  </div>
+</section>
 
-  <section class="content">
-    <div class="container">
+<section class="section alt">
+  <div class="container">
+    <div class="section-header">
+      <span class="eyebrow" style="color: var(--evergreen);">Why your gift matters</span>
+      <h2>Turning support into stability.</h2>
+      <p>
+        Every contribution helps remove barriers and strengthen support systems during the critical reentry period.
+      </p>
+    </div>
+
+    <div class="grid grid-3">
       <div class="card">
-        <h3>Online Giving</h3>
-        <p>Add your PayPal button or link here once it’s ready.</p>
-        <div style="height:12px"></div>
+        <h3>$25</h3>
+        <p class="muted">Provides basic reentry supplies or transportation support.</p>
+      </div>
+      <div class="card">
+        <h3>$50</h3>
+        <p class="muted">Helps fund mentorship materials and program coordination.</p>
+      </div>
+      <div class="card">
+        <h3>$100+</h3>
+        <p class="muted">Supports program stability and expanded community partnerships.</p>
+      </div>
+    </div>
 
-        <!-- Replace this placeholder once you have your PayPal link or button code -->
-        <a class="button primary" href="#" aria-disabled="true">PayPal button coming soon</a>
+    <div style="margin-top:18px; display:flex; gap:12px; flex-wrap:wrap;">
+      <!-- Replace # with your PayPal link -->
+      <a class="btn btn-primary" href="#" target="_blank" rel="noopener">Donate with PayPal</a>
+      <a class="btn btn-ghost" href="about.html">Learn our story</a>
+    </div>
+  </div>
+</section>
 
-        <div style="height:10px"></div>
-        <p class="small">
-          When you get a PayPal donation link or button code, paste it here and we will style it to match.
+<section class="section">
+  <div class="container">
+    <div class="split">
+      <div>
+        <span class="eyebrow" style="color: var(--evergreen);">Transparency</span>
+        <h2>Giving with confidence.</h2>
+        <p class="muted">
+          We are committed to responsible stewardship and clear communication about how funds are used.
+        </p>
+
+        <ul class="checklist">
+          <li>Mission-focused programs and services</li>
+          <li>Community-based partnerships</li>
+          <li>Mentorship and reentry support</li>
+          <li>Operational stability and sustainability</li>
+        </ul>
+
+        <p class="muted" style="margin-top:14px;">
+          As the organization grows, we will share impact updates and reports to keep our supporters informed.
         </p>
       </div>
 
-      <div style="height:14px"></div>
-
-      <div class="card">
-        <h3>Prefer another way to give?</h3>
-        <p>Contact us and we will share options for giving and receipts.</p>
-        <div style="height:12px"></div>
-        <a class="button" href="contact.html">Contact Us</a>
-      </div>
-    </div>
-  </section>
-</main>
-
-<footer class="site-footer">
-  <div class="container footer-inner">
-    <div class="footer-brand">
-      <img class="footer-mark" src="assets/img/logo-mark.png" alt="" width="40" height="40" loading="lazy" decoding="async" />
       <div>
-        <div style="font-weight:800;">From Prison to Purpose</div>
-        <div class="small">© <span id="year"></span> All rights reserved.</div>
-      </div>
-    </div>
+        <div class="card highlight">
+          <span class="eyebrow" style="color: var(--gold);">Other ways to give</span>
+          <h2 style="margin-top:8px;">More than one path to support.</h2>
+          <p class="muted">
+            Financial gifts are vital, but there are other meaningful ways to help advance the mission.
+          </p>
 
-    <div class="footer-links">
-      <a href="about.html">About</a>
-      <a href="programs.html">Programs</a>
-      <a href="get-involved.html">Get Involved</a>
-      <a href="donate.html">Donate</a>
-      <a href="contact.html">Contact</a>
+          <ul class="checklist">
+            <li>Monthly recurring donations</li>
+            <li>In-kind contributions (services or supplies)</li>
+            <li>Employer matching gifts</li>
+            <li>Community or faith-based fundraising</li>
+          </ul>
+
+          <div style="display:flex; gap:12px; flex-wrap:wrap; margin-top:16px;">
+            <a class="btn btn-primary" href="contact.html">Ask about giving</a>
+            <a class="btn btn-ghost" href="get-involved.html">Volunteer instead</a>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
-</footer>
+</section>
 
-<script>
-  document.getElementById("year").textContent = new Date().getFullYear();
-</script>
+<section class="section alt">
+  <div class="container">
+    <div class="section-header">
+      <span class="eyebrow" style="color: var(--evergreen);">Questions?</span>
+      <h2>We’re happy to help.</h2>
+      <p>
+        If you have questions about donations, partnerships, or giving options, please reach out.
+      </p>
+    </div>
+
+    <div style="display:flex; gap:12px; flex-wrap:wrap;">
+      <a class="btn btn-primary" href="contact.html">Contact Us</a>
+      <a class="btn btn-ghost" href="programs.html">View Programs</a>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container footer-grid">
+    <div>
+      <h3>From Prison to Purpose</h3>
+      <p>Helping people rebuild life with dignity, support, and purpose.</p>
+      <small>© <span id="year"></span> From Prison to Purpose. All rights reserved.</small>
+    </div>
+
+    <div>
+      <h3>Explore</h3>
+      <p><a href="about.html">About Us</a></p>
+      <p><a href="programs.html">Programs</a></p>
+      <p><a href="get-involved.html">Get Involved</a></p>
+      <p><a href="donate.html">Donate</a></p>
+      <p><a href="contact.html">Contact</a></p>
+    </div>
+
+    <div>
+      <h3>Contact</h3>
+      <p>Email: <a href="mailto:info@fromprisontopurpose.org">info@fromprisontopurpose.org</a></p>
+      <p>Phone: <a href="tel:+1">Add phone number</a></p>
+      <p><small>Replace placeholders as details are confirmed.</small></p>
+    </div>
+  </div>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</footer>
 
 </body>
 </html>
