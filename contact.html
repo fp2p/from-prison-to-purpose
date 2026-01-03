@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Donate | From Prison to Purpose</title>
+  <title>Contact | From Prison to Purpose</title>
 
   <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -17,115 +17,117 @@
 
 <div data-include="partials/header.html"></div>
 
-<section class="hero hero-small">
-  <div class="hero-bg" style="background-image:url('assets/img/hero-donate.jpg');"></div>
+<section class="hero hero-slim">
+  <div class="hero-bg" style="background-image:url('assets/img/hero-contact.jpg');"></div>
   <div class="container hero-inner">
-    <span class="eyebrow">Support the mission</span>
-    <h1>Your generosity builds real pathways forward.</h1>
+    <span class="eyebrow">Contact</span>
+    <h1>Let’s connect.</h1>
     <p>
-      Donations help provide practical support, mentorship resources, and program stability for people rebuilding life after incarceration.
+      Whether you want to volunteer, mentor, partner, or support our work, we’d love to hear from you.
+      From Prison to Purpose, Foundation serves Prentiss County and beyond through programs, educational classes, activities, and resources.
     </p>
-    <div class="hero-actions">
-      <!-- Replace # with your PayPal link when ready -->
-      <a class="btn btn-primary" href="#" target="_blank" rel="noopener">Donate with PayPal</a>
-      <a class="btn btn-outline" href="get-involved.html">Get Involved</a>
-    </div>
   </div>
 </section>
 
 <section class="section alt">
   <div class="container">
     <div class="section-header">
-      <span class="eyebrow" style="color: var(--evergreen);">Why your gift matters</span>
-      <h2>Turning support into stability.</h2>
+      <span class="eyebrow" style="color: var(--evergreen);">How can we help?</span>
+      <h2>Reach out for volunteering, partnerships, or questions.</h2>
       <p>
-        Every contribution helps remove barriers and strengthen support systems during the critical reentry period.
+        Use the form below and tell us what you’re interested in. We’ll respond as soon as we can.
       </p>
     </div>
 
-    <div class="grid grid-3">
+    <div class="grid grid-2">
       <div class="card">
-        <h3>$25</h3>
-        <p class="muted">Provides basic reentry supplies or transportation support.</p>
+        <h3>Common reasons to contact us</h3>
+        <ul class="list">
+          <li>Volunteer at community events, drives, or outreach</li>
+          <li>Become a mentor or support youth programs</li>
+          <li>Partner with us as a church, school, business, or civic group</li>
+          <li>Ask about classes or resources</li>
+          <li>Support reentry outreach and community unity initiatives</li>
+          <li>Donation questions and sponsorship opportunities</li>
+        </ul>
+
+        <div style="margin-top:16px; display:flex; gap:12px; flex-wrap:wrap;">
+          <a class="btn btn-primary" href="get-involved.html">Get Involved</a>
+          <a class="btn btn-ghost" href="programs.html">Explore Programs</a>
+        </div>
       </div>
+
       <div class="card">
-        <h3>$50</h3>
-        <p class="muted">Helps fund mentorship materials and program coordination.</p>
-      </div>
-      <div class="card">
-        <h3>$100+</h3>
-        <p class="muted">Supports program stability and expanded community partnerships.</p>
+        <h3>Send a message</h3>
+
+        <!--
+          If your site already uses a form service, replace the action="" below with your endpoint
+          (Formspree/Netlify/etc). If you already have an existing form, you can keep your original
+          fields and just swap in the copy above.
+        -->
+        <form class="form" action="#" method="post">
+          <div class="form-row">
+            <label for="name">Full name</label>
+            <input id="name" name="name" type="text" autocomplete="name" required />
+          </div>
+
+          <div class="form-row">
+            <label for="email">Email</label>
+            <input id="email" name="email" type="email" autocomplete="email" required />
+          </div>
+
+          <div class="form-row">
+            <label for="phone">Phone (optional)</label>
+            <input id="phone" name="phone" type="tel" autocomplete="tel" />
+          </div>
+
+          <div class="form-row">
+            <label for="topic">What are you reaching out about?</label>
+            <select id="topic" name="topic" required>
+              <option value="" selected disabled>Select one</option>
+              <option value="volunteer">Volunteering</option>
+              <option value="mentoring">Mentoring / Youth Programs</option>
+              <option value="partnership">Partnership / Sponsorship</option>
+              <option value="donation">Donation Question</option>
+              <option value="programs">Programs / Classes</option>
+              <option value="resources">Resources</option>
+              <option value="other">Other</option>
+            </select>
+          </div>
+
+          <div class="form-row">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="6" placeholder="Tell us how you'd like to help or what you’d like to know…" required></textarea>
+          </div>
+
+          <div style="display:flex; gap:12px; flex-wrap:wrap; margin-top:10px;">
+            <button class="btn btn-primary" type="submit">Send Message</button>
+            <a class="btn btn-ghost" href="donate.html">Donate</a>
+          </div>
+
+          <p style="margin-top:12px; opacity:.85;">
+            By reaching out, you’re helping strengthen community unity and expand opportunity for youth, families, and returning citizens.
+          </p>
+        </form>
+
       </div>
     </div>
 
-    <div style="margin-top:18px; display:flex; gap:12px; flex-wrap:wrap;">
-      <!-- Replace # with your PayPal link -->
-      <a class="btn btn-primary" href="#" target="_blank" rel="noopener">Donate with PayPal</a>
-      <a class="btn btn-ghost" href="about.html">Learn our story</a>
-    </div>
   </div>
 </section>
 
 <section class="section">
   <div class="container">
-    <div class="split">
-      <div>
-        <span class="eyebrow" style="color: var(--evergreen);">Transparency</span>
-        <h2>Giving with confidence.</h2>
-        <p class="muted">
-          We are committed to responsible stewardship and clear communication about how funds are used.
-        </p>
-
-        <ul class="checklist">
-          <li>Mission-focused programs and services</li>
-          <li>Community-based partnerships</li>
-          <li>Mentorship and reentry support</li>
-          <li>Operational stability and sustainability</li>
-        </ul>
-
-        <p class="muted" style="margin-top:14px;">
-          As the organization grows, we will share impact updates and reports to keep our supporters informed.
-        </p>
-      </div>
-
-      <div>
-        <div class="card highlight">
-          <span class="eyebrow" style="color: var(--gold);">Other ways to give</span>
-          <h2 style="margin-top:8px;">More than one path to support.</h2>
-          <p class="muted">
-            Financial gifts are vital, but there are other meaningful ways to help advance the mission.
-          </p>
-
-          <ul class="checklist">
-            <li>Monthly recurring donations</li>
-            <li>In-kind contributions (services or supplies)</li>
-            <li>Employer matching gifts</li>
-            <li>Community or faith-based fundraising</li>
-          </ul>
-
-          <div style="display:flex; gap:12px; flex-wrap:wrap; margin-top:16px;">
-            <a class="btn btn-primary" href="contact.html">Ask about giving</a>
-            <a class="btn btn-ghost" href="get-involved.html">Volunteer instead</a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section class="section alt">
-  <div class="container">
     <div class="section-header">
-      <span class="eyebrow" style="color: var(--evergreen);">Questions?</span>
-      <h2>We’re happy to help.</h2>
+      <span class="eyebrow" style="color: var(--gold);">Our focus</span>
+      <h2>Opportunity that improves quality of life.</h2>
       <p>
-        If you have questions about donations, partnerships, or giving options, please reach out.
+        <strong>Mission:</strong> To provide equal opportunity for all individuals to learn and broaden their horizon through programs, educational classes, activities, and resources.
       </p>
-    </div>
-
-    <div style="display:flex; gap:12px; flex-wrap:wrap;">
-      <a class="btn btn-primary" href="contact.html">Contact Us</a>
-      <a class="btn btn-ghost" href="programs.html">View Programs</a>
+      <p>
+        <strong>Vision:</strong> That every individual is afforded opportunities that improve their quality of life.
+      </p>
+      <p><em>“The sum of the whole is greater than its individual parts.”</em></p>
     </div>
   </div>
 </section>

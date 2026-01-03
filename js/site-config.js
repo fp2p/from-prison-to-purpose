@@ -15,8 +15,9 @@ window.SITE_CONTENT = {
     partnerships: "We partner with community organizations for referrals, resource coordination, sponsorships, and program support."
   },
   leadership: [
-    { role: "Executive Director", name: "Name coming soon", bio: "Short 1–2 sentence bio." },
-    { role: "Program Lead", name: "Name coming soon", bio: "Short 1–2 sentence bio." },
-    { role: "Board Member", name: "Name coming soon", bio: "Short 1–2 sentence bio." }
+    { role: "President/Founder", name: "Christopher Ragins", bio: "Short bio or link to longer bio..." },
+    { role: "Vice President", name: "Robert Jackson", bio: "Short bio or link to longer bio..." },
+    { role: "Secretary", name: "Kristen Ragins", bio: "Short bio or link to longer bio..." },
+    { role: "Treasurer", name: "Jackie Burress", bio: "Short bio or link to longer bio..." }
   ]
 };
