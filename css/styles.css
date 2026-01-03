@@ -485,3 +485,125 @@ input:focus,select:focus,textarea:focus{
   .hero{ min-height:auto; }
   .hero-inner{ padding:68px 0; }
 }
+/* ================================
+   Mobile-first collapsible header nav (FIX)
+   ================================ */
+
+/* IMPORTANT: prevent your old .nav desktop styling from forcing layout on the collapsible nav */
+.nav.nav-collapsible{
+  display: none;                 /* closed by default on mobile */
+  background: #fff;
+  border-bottom: 1px solid var(--border);
+}
+
+/* When JS opens it */
+.nav.nav-collapsible[data-open]{
+  display: block;
+}
+
+.nav-controls{
+  display:flex;
+  align-items:center;
+  gap:10px;
+}
+
+/* Hamburger */
+.nav-toggle{
+  width:44px;
+  height:44px;
+  border-radius:999px;
+  border:1px solid var(--border);
+  background:#fff;
+  cursor:pointer;
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+}
+
+.nav-toggle:hover{
+  border-color: rgba(15,118,110,0.35);
+}
+
+.nav-toggle-bars{
+  width:18px;
+  height:2px;
+  background: var(--primary);
+  position:relative;
+  display:block;
+}
+.nav-toggle-bars::before,
+.nav-toggle-bars::after{
+  content:"";
+  position:absolute;
+  left:0;
+  width:18px;
+  height:2px;
+  background: var(--primary);
+}
+.nav-toggle-bars::before{ top:-6px; }
+.nav-toggle-bars::after{ top:6px; }
+
+/* menu items */
+.nav-inner{
+  padding: 10px 24px 16px 24px;
+  display:flex;
+  flex-direction:column;
+  gap:10px;
+}
+
+.nav.nav-collapsible .nav-inner a{
+  font-family:"Libre Franklin",system-ui,sans-serif;
+  font-weight:800;
+  color:var(--text);
+  opacity:0.9;
+  padding:10px 10px;
+  border-radius:12px;
+}
+
+.nav.nav-collapsible .nav-inner a:hover{
+  background: var(--primary-soft);
+  text-decoration:none;
+}
+
+.nav.nav-collapsible .nav-inner a.active{
+  color: var(--accent);
+  background: rgba(15,118,110,0.10);
+  opacity: 1;
+}
+
+.donate-mobile{
+  margin-top: 8px;
+  justify-content:center;
+}
+
+/* Mobile: hide the top-row Donate (we show Donate inside the menu) */
+@media (max-width: 979px){
+  .donate-desktop{ display:none !important; }
+}
+
+/* Desktop: nav is always visible and horizontal; hamburger hidden */
+@media (min-width: 980px){
+  .nav-toggle{ display:none !important; }
+
+  .nav.nav-collapsible{
+    display:block !important;
+    border-bottom: 1px solid var(--border);
+  }
+
+  .nav-inner{
+    flex-direction:row;
+    align-items:center;
+    gap:18px;
+    padding: 10px 24px;
+  }
+
+  .nav.nav-collapsible .nav-inner a{
+    padding: 8px 0;
+    border-radius: 0;
+    background: transparent !important;
+  }
+
+  /* Desktop: hide Donate inside the menu, show it in the top row */
+  .donate-mobile{ display:none !important; }
+  .donate-desktop{ display:inline-flex !important; }
+}
