@@ -73,24 +73,22 @@ a:hover{ text-decoration: underline; }
   padding:14px 0;
 }
 
-.brand{
-  display:flex;
-  align-items:center;
-  gap:10px;
-  font-family:"Libre Franklin",system-ui,sans-serif;
-  font-weight:800;
-  letter-spacing:-0.02em;
-  color:var(--text);
-}
-.brand:hover{ text-decoration:none; }
+/* Brand logo styling */
+.brand {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
 
-.brand-logo{
-  width:38px;
-  height:38px;
-  border-radius:10px;
-  object-fit:contain;
-  background:var(--primary-soft);
-  padding:4px;
+  background: #ffffff;
+  padding: 6px;              /* space around logo */
+  border-radius: 10px;       /* soft white badge */
+}
+
+.brand-logo {
+  width: 52px;               /* larger than 38x38 */
+  height: 52px;
+  object-fit: contain;
+  display: block;
 }
 
 .brand-name{
@@ -606,4 +604,11 @@ input:focus,select:focus,textarea:focus{
   /* Desktop: hide Donate inside the menu, show it in the top row */
   .donate-mobile{ display:none !important; }
   .donate-desktop{ display:inline-flex !important; }
+}
+
+@media (max-width: 768px) {
+  .brand-logo {
+    width: 46px;
+    height: 46px;
+  }
 }
