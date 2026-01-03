@@ -15,26 +15,7 @@
 
 <body>
 
-<header class="header">
-  <div class="container header-inner">
-    <a class="brand" href="index.html" aria-label="From Prison to Purpose Home">
-      <img class="brand-logo" src="assets/img/logo-mark.png" alt="From Prison to Purpose logo" />
-      <span>
-        <div class="brand-name">From Prison to Purpose</div>
-        <div class="brand-tag">Nonprofit Foundation</div>
-      </span>
-    </a>
-
-    <nav class="nav" aria-label="Primary">
-      <a href="index.html">Home</a>
-      <a href="about.html">About Us</a>
-      <a class="active" href="programs.html">Programs</a>
-      <a href="get-involved.html">Get Involved</a>
-      <a href="contact.html">Contact</a>
-      <a class="btn btn-primary" href="donate.html">Donate</a>
-    </nav>
-  </div>
-</header>
+<div data-include="partials/header.html"></div>
 
 <section class="hero hero-small">
   <div class="hero-bg" style="background-image:url('assets/img/hero-programs.jpg');"></div>
@@ -159,35 +140,10 @@
   </div>
 </section>
 
-<footer class="footer">
-  <div class="container footer-grid">
-    <div>
-      <h3>From Prison to Purpose</h3>
-      <p>Helping people rebuild life with dignity, support, and purpose.</p>
-      <small>© <span id="year"></span> From Prison to Purpose. All rights reserved.</small>
-    </div>
+<div data-include="partials/footer.html"></div>
 
-    <div>
-      <h3>Explore</h3>
-      <p><a href="about.html">About Us</a></p>
-      <p><a href="programs.html">Programs</a></p>
-      <p><a href="get-involved.html">Get Involved</a></p>
-      <p><a href="donate.html">Donate</a></p>
-      <p><a href="contact.html">Contact</a></p>
-    </div>
-
-    <div>
-      <h3>Contact</h3>
-      <p>Email: <a href="mailto:info@fromprisontopurpose.org">info@fromprisontopurpose.org</a></p>
-      <p>Phone: <a href="tel:+1">Add phone number</a></p>
-      <p><small>Replace placeholders as details are confirmed.</small></p>
-    </div>
-  </div>
-
-  <script>
-    document.getElementById('year').textContent = new Date().getFullYear();
-  </script>
-</footer>
+<script src="js/includes.js"></script>
+<script src="js/main.js"></script>
 
 </body>
 </html>
