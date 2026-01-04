@@ -12,168 +12,242 @@
 
   <link rel="stylesheet" href="css/styles.css" />
 
-    <!-- Open Graph / Social Sharing -->
-    <meta property="og:type" content="website" />
-    <meta property="og:site_name" content="From Prison to Purpose" />
-    <meta property="og:url" content="https://fromprison2purpose.org/donate.html" />
-    <meta property="og:title" content="Donate | From Prison to Purpose" />
-    <meta property="og:description" content="Providing equal opportunity through programs, educational classes, activities, and resources that improve quality of life in Prentiss County and beyond." />
-    <meta property="og:image" content="/from-prison-to-purpose/assets/img/og-image.png" />
-    <meta property="og:image:width" content="1200" />
-    <meta property="og:image:height" content="630" />
+  <!-- Open Graph / Social Sharing -->
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="From Prison to Purpose" />
+  <meta property="og:url" content="https://fromprison2purpose.org/donate.html" />
+  <meta property="og:title" content="Donate | From Prison to Purpose" />
+  <meta property="og:description" content="Providing equal opportunity through programs, educational classes, activities, and resources that improve quality of life in Prentiss County and beyond." />
+  <meta property="og:image" content="/from-prison-to-purpose/assets/img/og-image.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
 
-    <!-- Twitter Card (also used by many platforms) -->
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="Donate | From Prison to Purpose" />
-    <meta name="twitter:description" content="Providing equal opportunity through programs, educational classes, activities, and resources that improve quality of life in Prentiss County and beyond." />
-    <meta name="twitter:image" content="/from-prison-to-purpose/assets/img/og-image.png" />
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Donate | From Prison to Purpose" />
+  <meta name="twitter:description" content="Providing equal opportunity through programs, educational classes, activities, and resources that improve quality of life in Prentiss County and beyond." />
+  <meta name="twitter:image" content="/from-prison-to-purpose/assets/img/og-image.png" />
 
-    <!-- Favicon -->
-    <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicon/favicon-16x16.png">
-    <link rel="shortcut icon" href="assets/img/favicon/favicon.ico">
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicon/favicon-16x16.png">
+  <link rel="shortcut icon" href="assets/img/favicon/favicon.ico">
+
+  <!-- Page-only tweaks (safe, minimal) -->
+  <style>
+  /* --- DONATION FORM WRAPPER --- */
+  .donate-embed-wrap {
+    border: 1px solid rgba(255,255,255,0.08);
+    border-radius: 18px;
+    background: rgba(255,255,255,0.03); /* intentional, subtle */
+    padding: 20px;
+    display: flex;
+    justify-content: center;           /* center widget */
+  }
+
+  /* Keep the form centered and readable */
+  dbox-widget {
+    display: block;
+    width: 100%;
+    max-width: 520px;                  /* prevents left-floating look */
+    margin: 0 auto;
+  }
+
+  /* Desktop: keep the form visible while scrolling */
+  @media (min-width: 980px) {
+    .donate-sticky {
+      position: sticky;
+      top: 96px;
+    }
+  }
+
+  /* --- TRUST BADGES --- */
+  .donate-trust {
+    margin-top: 14px;
+    padding-top: 14px;
+    border-top: 1px solid rgba(255,255,255,0.08);
+    display: grid;
+    gap: 10px;
+  }
+
+  .donate-trust .pill {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 8px 10px;
+    border-radius: 999px;
+    border: 1px solid rgba(255,255,255,0.10);
+    background: rgba(255,255,255,0.04);
+    font-size: 0.95rem;
+    line-height: 1.2;
+    width: fit-content;
+    max-width: 100%;
+  }
+
+  /* Mobile polish */
+  @media (max-width: 640px) {
+    .donate-embed-wrap {
+      padding: 14px;
+    }
+
+    dbox-widget {
+      max-width: 100%;
+    }
+  }
+</style>
+
 </head>
 
 <body>
 
-<div data-include="partials/header.html"></div>
+  <div data-include="partials/header.html"></div>
 
-<section class="hero hero-slim">
-  <div class="hero-bg" style="background-image:url('assets/img/hero-donate.jpg');"></div>
-  <div class="container hero-inner">
-    <span class="eyebrow">Donate</span>
-    <h1>Your generosity builds pathways forward.</h1>
-    <p>
-      Every gift helps expand opportunity through programs, educational classes, community activities, and resources that improve quality of life.
-    </p>
-    <div class="hero-actions">
-      <a class="btn btn-primary" href="#donate">Donate Now</a>
-      <a class="btn btn-outline" href="get-involved.html">Get Involved</a>
-      <a class="btn btn-ghost" href="programs.html" style="border-color:rgba(255,255,255,0.35); color:#fff;">See What We Do</a>
-    </div>
-  </div>
-</section>
-
-<section class="section alt" id="donate">
-  <div class="container">
-    <div class="section-header">
-      <span class="eyebrow" style="color: var(--evergreen);">Mission-driven giving</span>
-      <h2>Support youth, reentry, and community unity.</h2>
+  <section class="hero hero-slim">
+    <div class="hero-bg" style="background-image:url('assets/img/hero-donate.jpg');"></div>
+    <div class="container hero-inner">
+      <span class="eyebrow">Donate</span>
+      <h1>Your generosity builds pathways forward.</h1>
       <p>
-        From Prison to Purpose, Foundation is dedicated to the betterment of our communities in Prentiss County and beyond.
-        Your gift helps us continue building programs that serve youth, strengthen families, and support men and women returning home.
+        Every gift helps expand opportunity through programs, educational classes, community activities, and resources that improve quality of life.
       </p>
+      <div class="hero-actions">
+        <a class="btn btn-primary" href="#donate">Donate Now</a>
+        <a class="btn btn-outline" href="get-involved.html">Get Involved</a>
+        <a class="btn btn-ghost" href="programs.html" style="border-color:rgba(255,255,255,0.35); color:#fff;">See What We Do</a>
+      </div>
     </div>
+  </section>
 
-    <div class="grid grid-2">
-      <div class="card">
-        <h3>Give securely</h3>
+  <section class="section alt" id="donate">
+    <div class="container">
+      <div class="section-header">
+        <span class="eyebrow" style="color: var(--evergreen);">Mission-driven giving</span>
+        <h2>Support youth, reentry, and community unity.</h2>
         <p>
-          Use our donation options below. If you have questions about giving, partnerships, or sponsorships,
-          we’re happy to help.
+          From Prison to Purpose, Foundation is dedicated to the betterment of our communities in Prentiss County and beyond.
+          Your gift helps us continue building programs that serve youth, strengthen families, and support men and women returning home.
         </p>
+      </div>
 
-        <!-- If you already have a PayPal button/embed, paste it here -->
-        <div class="cta-band" style="margin-top:14px;">
-          <div class="container cta-inner" style="padding:0;">
-            <div>
-              <h3 style="margin:0 0 6px;">Donate with PayPal</h3>
-              <p style="margin:0;">
-                Quick, secure giving that supports programs and resources.
-              </p>
-            </div>
-            <div style="display:flex; gap:12px; flex-wrap:wrap;">
-              <a class="btn btn-primary" href="#" aria-label="Donate with PayPal (link placeholder)">Donate with PayPal</a>
-              <a class="btn btn-ghost" href="contact.html">Ask a question</a>
-            </div>
+      <div class="grid grid-2">
+        <!-- LEFT: Impact + reassurance -->
+        <div class="card">
+          <h3>What your gift supports</h3>
+          <ul class="list">
+            <li><strong>Youth development</strong> through mentoring, activities, and educational opportunities</li>
+            <li><strong>Reentry support</strong> for men and women returning from state or federal facilities</li>
+            <li><strong>Community activities</strong> such as events, sports, food drives, and back-to-school drives</li>
+            <li><strong>Senior citizen care</strong> and community unity initiatives</li>
+            <li><strong>Educational classes</strong> including financial literacy, health &amp; wellness, mental health awareness, and law awareness</li>
+            <li><strong>Resources</strong> like funding support, scholarships, and iPads for learning</li>
+          </ul>
+
+          <div class="donate-trust">
+            <span class="pill">🔒 Secure, encrypted giving</span>
+            <span class="pill">🧾 501(c)(3) and tax-deductible</span>
+            <span class="pill">💛 Give once or make it monthly</span>
+          </div>
+
+          <p style="margin-top:14px; opacity:.9;">
+            Questions about giving, partnerships, or sponsorships? We’re happy to help.
+            <a href="contact.html">Contact us</a>.
+          </p>
+        </div>
+
+        <!-- RIGHT: Donorbox embed -->
+        <div class="card donate-sticky">
+          <h3>Donate online</h3>
+          <p style="opacity:.92; margin-bottom:12px;">
+            Use the secure form below to make a one-time or recurring gift.
+          </p>
+
+          <div class="donate-embed-wrap" aria-label="Donation form">
+            <!-- Donorbox Widget -->
+            <script type="module" src="https://donorbox.org/widgets.js" async></script>
+            <dbox-widget
+              campaign="donation-898616"
+              type="donation_form"
+              interval="1 T"
+              enable-auto-scroll="true">
+            </dbox-widget>
+          </div>
+          <p style="margin-top:10px; opacity:.85; font-size:.95rem;">
+            From Prison to Purpose, Foundation is a 501(c)(3) nonprofit organization.
+            Donations are tax-deductible to the extent allowed by law.
+          </p>
+          <p style="margin-top:12px; opacity:.85; font-size:.98rem;">
+            Prefer to give another way? <a href="contact.html">Reach out</a> and we’ll coordinate a method that works for you.
+          </p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="section-header">
+        <span class="eyebrow" style="color: var(--evergreen);">Give with purpose</span>
+        <h2>Make it monthly or sponsor a need.</h2>
+        <p>
+          Consistent support helps us plan ahead and expand what we can offer. If you’d like, you can also sponsor a specific need
+          like scholarships, learning tools, or a community drive.
+        </p>
+      </div>
+
+      <div class="grid grid-3">
+        <div class="card">
+          <h3>Monthly Giving</h3>
+          <p>Reliable support that strengthens programs over time.</p>
+        </div>
+        <div class="card">
+          <h3>Sponsor Resources</h3>
+          <p>Help provide scholarships and learning tools like iPads.</p>
+        </div>
+        <div class="card">
+          <h3>Sponsor an Event</h3>
+          <p>Support community events and outreach that bring unity.</p>
+        </div>
+      </div>
+
+      <div style="margin-top:16px; display:flex; gap:12px; flex-wrap:wrap;">
+        <a class="btn btn-primary" href="contact.html">Talk Sponsorship</a>
+        <a class="btn btn-ghost" href="get-involved.html">Other Ways to Help</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section alt">
+    <div class="container">
+      <div class="section-header">
+        <span class="eyebrow" style="color: var(--gold);">Together</span>
+        <h2>Stronger communities take all of us.</h2>
+        <p>
+          <em>“The sum of the whole is greater than its individual parts.”</em>
+          Thank you for helping expand opportunity and improve quality of life.
+        </p>
+      </div>
+
+      <div class="cta-band">
+        <div class="container cta-inner" style="padding:0;">
+          <div>
+            <h3 style="margin:0 0 6px;">Want to give, volunteer, or partner?</h3>
+            <p style="margin:0;">Reach out and we’ll help you take the next step.</p>
+          </div>
+          <div style="display:flex; gap:12px; flex-wrap:wrap;">
+            <a class="btn btn-primary" href="contact.html">Contact Us</a>
+            <a class="btn btn-ghost" href="programs.html">Explore Programs</a>
           </div>
         </div>
-
-        <p style="margin-top:12px; opacity:.9;">
-          Prefer to give another way? Contact us and we’ll coordinate a donation method that works for you.
-        </p>
       </div>
 
-      <div class="card">
-        <h3>What your gift supports</h3>
-        <ul class="list">
-          <li><strong>Youth development</strong> through mentoring, activities, and educational opportunities</li>
-          <li><strong>Reentry support</strong> for men and women returning from state or federal facilities</li>
-          <li><strong>Community activities</strong> such as events, sports, food drives, and back-to-school drives</li>
-          <li><strong>Senior citizen care</strong> and community unity initiatives</li>
-          <li><strong>Educational classes</strong> including financial literacy, health &amp; wellness, mental health awareness, and law awareness</li>
-          <li><strong>Resources</strong> like funding support, scholarships, and iPads for learning</li>
-        </ul>
-      </div>
     </div>
+  </section>
 
-  </div>
-</section>
+  <div data-include="partials/footer.html"></div>
 
-<section class="section">
-  <div class="container">
-    <div class="section-header">
-      <span class="eyebrow" style="color: var(--evergreen);">Give with purpose</span>
-      <h2>Make it monthly or sponsor a need.</h2>
-      <p>
-        Consistent support helps us plan ahead and expand what we can offer. If you’d like, you can also sponsor a specific need
-        like scholarships, learning tools, or a community drive.
-      </p>
-    </div>
-
-    <div class="grid grid-3">
-      <div class="card">
-        <h3>Monthly Giving</h3>
-        <p>Reliable support that strengthens programs over time.</p>
-      </div>
-      <div class="card">
-        <h3>Sponsor Resources</h3>
-        <p>Help provide scholarships and learning tools like iPads.</p>
-      </div>
-      <div class="card">
-        <h3>Sponsor an Event</h3>
-        <p>Support community events and outreach that bring unity.</p>
-      </div>
-    </div>
-
-    <div style="margin-top:16px; display:flex; gap:12px; flex-wrap:wrap;">
-      <a class="btn btn-primary" href="contact.html">Talk Sponsorship</a>
-      <a class="btn btn-ghost" href="get-involved.html">Other Ways to Help</a>
-    </div>
-  </div>
-</section>
-
-<section class="section alt">
-  <div class="container">
-    <div class="section-header">
-      <span class="eyebrow" style="color: var(--gold);">Together</span>
-      <h2>Stronger communities take all of us.</h2>
-      <p>
-        <em>“The sum of the whole is greater than its individual parts.”</em>
-        Thank you for helping expand opportunity and improve quality of life.
-      </p>
-    </div>
-
-    <div class="cta-band">
-      <div class="container cta-inner" style="padding:0;">
-        <div>
-          <h3 style="margin:0 0 6px;">Want to give, volunteer, or partner?</h3>
-          <p style="margin:0;">Reach out and we’ll help you take the next step.</p>
-        </div>
-        <div style="display:flex; gap:12px; flex-wrap:wrap;">
-          <a class="btn btn-primary" href="contact.html">Contact Us</a>
-          <a class="btn btn-ghost" href="programs.html">Explore Programs</a>
-        </div>
-      </div>
-    </div>
-
-  </div>
-</section>
-
-<div data-include="partials/footer.html"></div>
-
-<script src="js/main.js"></script>
-<script src="js/includes.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/includes.js"></script>
 
 </body>
 </html>
